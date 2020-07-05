@@ -1,0 +1,26 @@
+.my-bubble-container {
+	display: flex;
+    padding: 5px 10px;
+}
+
+.my-text {
+	border: solid 1px #f0f0f0;
+	max-width: 250px;
+	padding: 10px;
+	border-radius: 30px;
+	margin-left: auto;
+	word-break: break-all;
+}
+
+.other {
+    position: relative;
+    padding: 10px 0;
+}
+
+.text-status{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: grey;
+    font-size: 11px;
+}

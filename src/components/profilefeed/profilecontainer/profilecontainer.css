@@ -1,0 +1,41 @@
+#profile-contain-info{
+    margin-top: 95px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+#profile-contain-name{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 5px;
+    color: #29303b;
+}
+
+#profile-contain-interests{
+    color: grey;
+}
+
+#profile-contain-image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: #f0f0f0;
+    border: solid 2px #f0f0f0;
+    margin-bottom: 10px;
+}
+
+#profile-contain-caption{
+    margin-top: 5px;
+    padding: 0 5px;
+    word-wrap: break-word;
+    line-height: 1.7em;
+}
+
+#profile-send-message{
+    padding: 10px;
+    color: #29303b;
+    margin: 10px auto 0 auto;
+    background: #f0f0f0;
+    border-radius: 35px;
+    width: 75px;
+}

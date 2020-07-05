@@ -1,0 +1,12 @@
+.notification-container{
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+    padding: 20px 10px;
+}
+.notification-post-container{
+    border: solid 1px #f0f0f0;
+    padding: 10px;
+    display: flex;
+    border-radius: 15px;
+}

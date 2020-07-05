@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "./static/css/main.3c664c06.chunk.css",
+    "main.js": "./static/js/main.3a703a12.chunk.js",
+    "main.js.map": "./static/js/main.3a703a12.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.2a7991f8.js",
+    "runtime-main.js.map": "./static/js/runtime-main.2a7991f8.js.map",
+    "static/js/2.3b8871b2.chunk.js": "./static/js/2.3b8871b2.chunk.js",
+    "static/js/2.3b8871b2.chunk.js.map": "./static/js/2.3b8871b2.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.1cc5f9c2183301260d149977c7faa50e.js": "./precache-manifest.1cc5f9c2183301260d149977c7faa50e.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.3c664c06.chunk.css.map": "./static/css/main.3c664c06.chunk.css.map",
+    "static/js/2.3b8871b2.chunk.js.LICENSE.txt": "./static/js/2.3b8871b2.chunk.js.LICENSE.txt",
+    "static/media/fonts.css": "./static/media/Quicksand-Bold.793b6352.woff",
+    "static/media/d.jpg": "./static/media/d.d28d1881.jpg",
+    "static/media/elon.jpg": "./static/media/elon.0c66ee2e.jpg",
+    "static/media/l.jpg": "./static/media/l.27e78095.jpg",
+    "static/media/r.jpg": "./static/media/r.ca72020f.jpg",
+    "static/media/s.jpg": "./static/media/s.44c122e5.jpg",
+    "static/media/w.jpg": "./static/media/w.7c581e47.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a7991f8.js",
+    "static/js/2.3b8871b2.chunk.js",
+    "static/css/main.3c664c06.chunk.css",
+    "static/js/main.3a703a12.chunk.js"
+  ]
+}

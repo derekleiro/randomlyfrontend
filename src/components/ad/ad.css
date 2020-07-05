@@ -1,0 +1,56 @@
+.ad-container{
+    display: flex;
+    overflow: hidden;
+    margin: 35px 0;
+}
+
+.ad-picture-small img{
+    width: 40px;
+    height: 40px;
+    transition: all ease-in-out 400ms;
+    border: solid 2px #f0f0f0;
+    background: #f0f0f0;
+    object-fit: cover;
+}
+
+.ad-content{
+    margin-left: 10px;
+}
+
+.ad-title{
+    font-weight: 700;
+    color: #29303b;
+}
+
+.ad-description{
+    margin: 10px 0;
+    word-wrap: break-word;
+}
+
+.ad-picture-big img{
+    width: 100%;
+    border: solid 1px #f0f0f0;
+    height: auto;
+}
+
+.ad-picture-big video{
+    width: 100%;
+    height: auto;
+}
+
+.ad-call-to-action{
+    margin-top: 10px;
+    max-width: 100px;
+    text-align: center;
+    border-radius: 35px;
+    padding: 5px;
+    border: solid 1px #29303b;
+}
+
+@media screen and (min-width: 738px) {
+    .ad-picture-small img{
+        width: 50px;
+        transition: all ease-in-out 400ms;
+        height: 50px;
+    }
+}

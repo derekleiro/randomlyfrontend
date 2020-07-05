@@ -1,0 +1,23 @@
+.chat-container{
+    display: flex;
+    margin: 35px 0;
+}
+
+.chat-unread{
+    padding: 2px 4px;
+    color: #29303b;
+    border-radius: 35px;
+}
+
+.profile-interest-p{
+    font-size: 10px;
+    color: grey;
+    position: absolute;
+    right: 10px;
+}
+
+.chat-text {
+    word-wrap: break-word;
+    word-break: break-all;
+    max-lines: 1;
+}

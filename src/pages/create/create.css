@@ -1,0 +1,11 @@
+
+#page-create{
+    margin-bottom: 75px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: #fafafa;
+    z-index: 9;
+    transition: opacity ease-in 400ms;
+}

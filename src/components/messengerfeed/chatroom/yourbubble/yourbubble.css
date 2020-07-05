@@ -1,0 +1,48 @@
+.your-bubble-container{
+    padding: 5px 10px;
+    display: flex;
+}
+
+.your-profile-image img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: solid 2px #f0f0f0;
+    vertical-align: middle;
+    margin-right: 10px;
+    background: #f0f0f0;
+}
+
+.your-text-profile{
+    border: solid 1px #f0f0f0;
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 30px;
+    background: #f0f0f0;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.your-text-status-profile{
+    margin-left: 7.5px;
+    font-size: 11px;
+    color: grey;
+}
+
+.your-text{
+    border: solid 1px #f0f0f0;
+    max-width: 200px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 30px;
+    margin-left: 55px;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.your-text-status{
+    margin-left: 62.5px;
+    font-size: 11px;
+    color: grey;
+}

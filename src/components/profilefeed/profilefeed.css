@@ -1,0 +1,21 @@
+#profile-contain-feed{
+    padding: 0 10px;
+    position: relative;
+    height: auto;
+}
+
+#profile-contain-text{
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-text{
+    flex: 1;
+}
+
+#no-posts{
+    text-align: center;
+    margin-top: 50px;
+}

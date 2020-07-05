@@ -1,0 +1,50 @@
+#create-textarea{
+    margin-top: 85px;
+    padding: 0 10px;
+    color: #29303b;
+    display: flex;
+    text-align: left;
+}
+
+#profile-picture-textarea img{
+    width: 40px;
+	height: 40px;
+	border: solid 2px #f0f0f0;
+	background: #f0f0f0;
+	border-radius: 100%;
+	object-fit: cover;
+}
+
+#text-area{
+    width: 100%;
+    max-width: 100%;
+    min-width:100%;
+    min-height: 270px;
+    height: 270px;
+    outline: 0;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+    background: transparent;
+}
+
+#submit button{
+    border: 0;
+    outline: 0;
+    background: #29303b;
+    padding: 5px 15px;
+    color: white;
+    opacity: 0.6;
+    border-radius: 35px;
+    font-family: "Poppins", sans-serif;
+}
+
+#textarea-avoid{
+    text-align: left;
+    margin-top: 25px;
+    padding: 0 10px;
+    line-height: 1.8em;
+}
+
+#textarea-avoid ol{
+    padding: 0;
+}

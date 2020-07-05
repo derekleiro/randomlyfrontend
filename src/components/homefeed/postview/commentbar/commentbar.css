@@ -1,0 +1,47 @@
+#comment-bar{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+}
+
+#cancel-reply{
+    position: absolute;
+    left: 15px;
+    font-weight: 700;
+    width: 15px;
+    height: 15px;
+}
+
+#comment-bar textarea{
+    outline: 0;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+    border: solid 1px #eeeeee;
+    background: #fafafa;
+    border-radius: 35px;
+    height: 42px;
+    resize: none;
+    padding: 10px 60px 10px 11.5px;
+    margin: 0 auto;
+    max-height: 200px;
+    width: 97.5%;
+}
+
+#send-comment-text{
+    color: #29303b;
+    position: absolute;
+    right: 30px;
+    font-weight: 700;
+}
+
+#comment-text-limit{
+    color: #e49400;
+    position: absolute;
+    right: 30px;
+    margin-top: 15px;
+}

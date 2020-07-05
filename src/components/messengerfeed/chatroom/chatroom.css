@@ -1,0 +1,23 @@
+#chat-room{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: #fafafa;
+    z-index: 9;
+    transition: opacity ease-in 400ms;
+}
+
+#chat-room-space{
+    margin: 75px 0;
+}
+
+.conversation-date{
+    margin: 25px auto;
+    padding: 5px;
+    text-align: center;
+    border: solid 1px #f0f0f0;
+    border-radius: 35px;
+    width: 80px;
+    color: grey;
+}

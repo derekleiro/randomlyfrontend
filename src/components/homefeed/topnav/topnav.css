@@ -1,0 +1,29 @@
+#topnav-container{
+    padding: 20px 0;
+    height: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background: #fafafa;
+    box-shadow: 0 0 10px rgba(150, 150, 150, 0.0);
+}
+
+#create-post-icon{
+    position: absolute;
+}
+
+#create-post-icon img{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.logo{
+    font-size: 2em;
+    text-align: center;
+    font-family: "Pacifico", sans-serif;
+    font-weight: 700;
+    margin-top: -10px;
+    color: #29303b;
+}

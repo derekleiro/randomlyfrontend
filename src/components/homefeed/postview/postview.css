@@ -1,0 +1,31 @@
+#postview-container{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: #fafafa;
+    z-index: 9;
+    transition: opacity ease-in 400ms;
+}
+
+#post-view {
+	display: block;
+	overflow: hidden;
+    margin: 75px 10px 75px 10px;
+}
+
+#profile-view-info{
+    display: flex;
+    align-items: center;
+}
+
+#profile-picture-postview img {
+	width: 40px;
+	height: 40px;
+	border: solid 2px #f0f0f0;
+    background: #f0f0f0;
+    margin-right: 10px;
+	border-radius: 100%;
+	object-fit: cover;
+	vertical-align: middle;
+}

@@ -1,0 +1,55 @@
+#login {
+    width: auto;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #fafafa;
+    z-index: 10;
+}
+
+#login-container {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+#logo-container {
+  font-family: "Pacifico", sans-serif;
+  color: #29303b;
+  font-weight: 700;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+#app-description {
+  margin: 30px 15px;
+  line-height: 1.8em;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.login-button {
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 35px;
+  margin: 25px auto 0 auto;
+  box-shadow: 0 0 10px rgba(150, 150, 150, 0.1);
+  color: #29303b;
+}
+
+#G-logo{
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 20px;
+}
+
+
+@media screen and (min-width: 738px){
+  .login-button {
+    width: 175px;
+  }
+}

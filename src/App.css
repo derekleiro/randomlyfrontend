@@ -1,0 +1,54 @@
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #fafafa;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 12px;
+  transition: all ease-in-out 400ms;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fafafa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fafafa;
+  transition: ease-in-out all 400ms;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fafafa;
+  /* ? Some nice color there: rgb(234, 65, 93) */
+  transition: ease-in-out all 400ms;
+}
+
+.page{
+  margin-bottom: 75px;
+  transition: opacity ease-in-out 400ms;
+}
+
+@media screen and (min-width: 738px){
+  body{
+    font-size: 14px;
+  }
+}
