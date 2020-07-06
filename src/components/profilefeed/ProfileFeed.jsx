@@ -73,7 +73,7 @@ const ProfileFeed = () => {
 								if (response.ok) {
 									const JSONresponse = await response.json();
 
-									if (JSONresponse.posts) {
+									if (JSONresponse.posts && !unmounted) {
 										dispatch(profileData(JSONresponse.posts));
 										dispatch(profileDataCount(JSONresponse.postCount));
 

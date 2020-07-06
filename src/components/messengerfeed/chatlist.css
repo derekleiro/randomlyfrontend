@@ -2,3 +2,7 @@
     margin-top: 85px;
     padding: 0 10px;
 }
+
+#chat-list a{
+    color: black;
+}

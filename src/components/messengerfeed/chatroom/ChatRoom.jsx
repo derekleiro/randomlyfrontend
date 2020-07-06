@@ -24,8 +24,31 @@ const ChatRoom = (props) => {
 	const [data, setData] = useState([]);
 	const [state, setState] = useState(true);
 
+	const [bottomSpacing, setBottomSpacing] = useState(75);
+	const [pickerOpened, setPickerOpened] = useState(false);
+
 	const sentMessageHandler = (message) => {
 		setData([].concat(...data, message));
+	};
+
+	const lineBreakHandler = (breaks) => {
+		if (breaks < 12) {
+			setBottomSpacing(breaks * 15 + 75);
+		}
+
+		if (pickerOpened && breaks < 12) {
+			setBottomSpacing(breaks * 15 + 375);
+		}
+	};
+
+	const pickerOpenedHandler = (opened) => {
+		if (opened) {
+			setPickerOpened(true);
+			setBottomSpacing(bottomSpacing + 300);
+		} else {
+			setPickerOpened(false);
+			setBottomSpacing(bottomSpacing - 300);
+		}
 	};
 
 	const setTime = (timestamp) => {
@@ -89,7 +112,7 @@ const ChatRoom = (props) => {
 								if (response.ok) {
 									const JSONResponse = await response.json();
 									if (JSONResponse && !unmounted) {
-										setState(false)
+										setState(false);
 										setData([].concat(...data, JSONResponse.messages));
 									}
 								}
@@ -112,8 +135,8 @@ const ChatRoom = (props) => {
 	return (
 		<div id="chat-room" style={{ opacity: fade ? 1 : 0 }}>
 			<LoadingScreen loadingState={state} />
-			<TopNav name={UserData ? UserData.name : null} uid={uid} />
-			<div id="chat-room-space">
+			<TopNav name={UserData ? UserData.name : null} uid={r_uid} />
+			<div id="chat-room-space" style={{ marginBottom: `${bottomSpacing}px` }}>
 				{data.length !== 0
 					? data.map((message, index) => {
 							const nextItem = data[index + 1];
@@ -251,7 +274,12 @@ const ChatRoom = (props) => {
 					  })
 					: null}
 			</div>
-			<TextBar r_uid={r_uid} sentMessage={sentMessageHandler} />
+			<TextBar
+				pickerOpened={pickerOpenedHandler}
+				lineBreaks={lineBreakHandler}
+				r_uid={r_uid}
+				sentMessage={sentMessageHandler}
+			/>
 		</div>
 	);
 };

@@ -26,7 +26,6 @@ const ChatList = () => {
 								if (response.ok) {
 									const JSONresponse = await response.json();
 									if (JSONresponse) {
-										console.log(JSONresponse)
 										dispatch(holdChatListData(JSONresponse.chatrooms))
 									};
 								}

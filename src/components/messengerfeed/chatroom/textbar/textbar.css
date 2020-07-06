@@ -1,0 +1,17 @@
+#emoji{
+    position: absolute;
+    left: 15px;
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+}
+
+#emoji-picker{
+
+    width: 100%;
+}
+
+#emoji-picker button {
+    border: 0;
+    outline: 0;
+}

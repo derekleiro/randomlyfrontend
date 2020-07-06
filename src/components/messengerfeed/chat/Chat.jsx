@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import moment from "moment";
 import firebase from "firebase/app";
 import "firebase/auth";
@@ -35,6 +36,7 @@ const Chat = (props) => {
 	};
 
 	return (
+		<Link to={props.senderUID === uid ? `/chat/${props.receiverUID}` : `/chat/${props.senderUID}`}>
 		<div className="chat-container">
 			<div className="profile-info">
 				<span className="profile-image">
@@ -90,6 +92,7 @@ const Chat = (props) => {
 				</span>
 			</div>
 		</div>
+		</Link>
 	);
 };
 

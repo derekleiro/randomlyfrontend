@@ -13,7 +13,7 @@ const TopNav = (props) => {
 		window.location.href.lastIndexOf("/") + 1
 	);
 	const [name, setName] = useState("");
-	const [isYou, setisYou] = useState(false);
+	const [isYou, setisYou] = useState("");
 	useEffect(() => {
 		let unmounted =	false;
 		const getName = async () => {
@@ -21,7 +21,7 @@ const TopNav = (props) => {
 				firebase.auth().onAuthStateChanged((user) => {
 					if (user) {
 						if (user.uid === uid && !unmounted) {
-							setisYou(true);
+							setisYou(user.uid);
 						}
 
 						user.getIdToken(true).then(async (idToken) => {
@@ -64,7 +64,9 @@ const TopNav = (props) => {
 					</span>
 					You
 				</div>
-			) : (
+			) : null}
+
+			{isYou !== "" ?  null : (
 				<div className="top-nav">
 					<span id="top-nav-left">
 						<img

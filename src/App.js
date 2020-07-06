@@ -71,7 +71,7 @@ const listenCookieChange = (cookieName, callback) => {
 	}, 100);
 };
 
-const App = () => {
+const App = (props) => {
 	const data = useState(JSON.parse(localStorage.getItem("userInfo")));
 	const offline = data ? data.bio : null;
 	const [auth, setAuth] = useState(readCookie("auth"));

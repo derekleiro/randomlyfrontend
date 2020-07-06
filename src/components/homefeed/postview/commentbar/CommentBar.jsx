@@ -146,7 +146,7 @@ const CommentBar = (props) => {
 	};
 
 	return (
-		<div id="comment-bar" style={{ marginLeft: "-10px" }}>
+		<div className="comment-bar" style={{ marginLeft: "-10px" }}>
 			{commentData ? (
 				commentData.authorName ? (
 					<img
@@ -201,19 +201,19 @@ const CommentBar = (props) => {
 				}}
 			></textarea>
 			{count > 0 && count < 321 && postUnsent && commentText.trim() !== "" ? (
-				<span onClick={sendComment} id="send-comment-text">
+				<span onClick={sendComment} className="send-comment-text">
 					POST
 				</span>
 			) : (
-				<span style={{ opacity: 0.6 }} id="send-comment-text">
+				<span style={{ opacity: 0.6 }} className="send-comment-text">
 					POST
 				</span>
 			)}
 			{count > 270 && count < 321 ? (
-				<span id="comment-text-limit">{remainingCount}</span>
+				<span className="comment-text-limit">{remainingCount}</span>
 			) : null}
 			{count > 320 ? (
-				<span style={{ color: "#fc0060" }} id="comment-text-limit">
+				<span style={{ color: "#fc0060" }} className="comment-text-limit">
 					{remainingCount}
 				</span>
 			) : null}

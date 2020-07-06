@@ -1,4 +1,4 @@
-#comment-bar{
+.comment-bar{
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -17,7 +17,7 @@
     height: 15px;
 }
 
-#comment-bar textarea{
+.comment-bar textarea{
     outline: 0;
     border: 0;
     font-family: "Poppins", sans-serif;
@@ -32,14 +32,14 @@
     width: 97.5%;
 }
 
-#send-comment-text{
+.send-comment-text{
     color: #29303b;
     position: absolute;
     right: 30px;
     font-weight: 700;
 }
 
-#comment-text-limit{
+.comment-text-limit{
     color: #e49400;
     position: absolute;
     right: 30px;
